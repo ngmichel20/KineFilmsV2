@@ -1,0 +1,43 @@
+<nav class="topnav">
+  <a
+    routerLink="/"
+    routerLinkActive="activePage"
+    [routerLinkActiveOptions]="{ exact: true }"
+    class="nav-logo"
+  >
+    <!-- <img src="assets/logo.png" alt="Company Logo" class="logo" /> -->
+  </a>
+  <div class="nav-items-container">
+    <a
+      routerLink="/"
+      routerLinkActive="activePage"
+      [routerLinkActiveOptions]="{ exact: true }"
+      class="nav-item"
+    >Home
+    </a>
+
+    <a
+      routerLink="/import-excel"
+      routerLinkActive="activePage"
+      [routerLinkActiveOptions]="{ exact: true }"
+      class="nav-item"
+    >Logout
+    </a>
+
+    <a
+      routerLink="/employee-by-license-number"
+      routerLinkActive="activePage"
+      [routerLinkActiveOptions]="{ exact: true }"
+      class="nav-item"
+    >Find employee by license number
+    </a>
+
+    <a
+      routerLink="/cars-by-employee-id"
+      routerLinkActive="activePage"
+      [routerLinkActiveOptions]="{ exact: true }"
+      class="nav-item"
+    >Find cars by employee's id
+    </a>
+  </div>
+</nav>

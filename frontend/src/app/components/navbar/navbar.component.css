@@ -1,0 +1,53 @@
+.topnav {
+  background-color: #3f51b5;
+  overflow: hidden;
+  /* display: flex; */
+  margin-bottom: 50px;
+}
+
+.topnav a {
+  background-color: #3f51b5;
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border-radius: 20px; /* Add a border radius */
+  transition: border-radius 0.3s; /* Add transition effect */
+}
+
+/* .topnav .nav-item {
+  margin-top: 15px;
+} */
+
+
+/* Change the color of links on hover */
+.topnav a:hover:not(.nav-logo) {
+  /*background: rgba(51, 170, 51, 0.1);*/
+  background-color: #f2f2f2;
+  color: black;
+  border-radius: 50px; /* Increase the border radius on hover */
+}
+
+/* Add a color to the active/current link */
+.topnav a.active:not(.nav-logo) {
+  background-color: black;
+}
+
+.topnav a.activePage:not(.nav-logo) {
+  color: black;
+}
+
+.nav-items-container {
+  display: flex;
+  margin-left: 200px;
+}
+
+
+/* .logo {
+    height: 50px;
+    margin-right: 10px;
+  } */

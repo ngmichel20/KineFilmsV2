@@ -1,0 +1,28 @@
+<div class="global">
+
+  <div class="movie-card-container">
+    <mat-card class="movie-card" *ngFor="let movie of movies" matRipple>
+      <mat-card-header>
+        <mat-card-title>{{ movie.title }}</mat-card-title>
+        <mat-card-subtitle>Director : {{ movie.director.firstName }} {{ movie.director.lastName }}</mat-card-subtitle>
+        <mat-card-subtitle>Genre : {{ movie.genre.genreName }}</mat-card-subtitle>
+        <mat-card-subtitle>Prod.Company : {{ movie.production_company }}</mat-card-subtitle>
+      </mat-card-header>
+      <img mat-card-image [src]="movie.posterUrl" alt="Movie Poster" class="movie-card-image">
+      <mat-card-content>
+        <p><strong>Description : </strong> {{ movie.description }}</p>
+        <p><strong>Ratings : </strong> {{ movie.rating }} /10</p>
+        <p><strong>Duration : </strong>{{ movie.duration }} minutes</p>
+      </mat-card-content>
+<!--      <mat-card-actions>-->
+<!--        <button mat-button>ORDER TICKET</button>-->
+<!--        <button mat-button>DETAILS</button>-->
+<!--      </mat-card-actions>-->
+      <mat-card-actions>
+        <button mat-button class="order-button" (mouseenter)="onMouseEnter()" (mouseleave)="onMouseLeave()">ORDER TICKET</button>
+        <button mat-button class="details-button" (mouseenter)="onMouseEnter()" (mouseleave)="onMouseLeave()">DETAILS</button>
+      </mat-card-actions>
+
+    </mat-card>
+  </div>
+</div>

@@ -30,6 +30,6 @@ public class Movie {
   private String country;
   private String language;
   private String production_company;
-  //  private String poster_url;
+  private String poster_url;
 //  private String trailer_url;
 }
